@@ -1,0 +1,17 @@
+/*.table th, .table td {*/
+    /*text-align: center;*/
+/*}*/
+
+.space a {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.no_margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.input_m {
+    width: 10em;
+}
