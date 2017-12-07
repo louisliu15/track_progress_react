@@ -11,7 +11,7 @@ export const submitLogin = (data) => {
     //     return isjson;
     // }
     // console.log("Action: submitLogin")
-    console.log("Action: submitLogin data:", data)
+    // console.log("Action: submitLogin data:", data)
 
     return dispatch => {
         // let url = `${BASE_URL}/login/`
@@ -33,7 +33,7 @@ export const submitLogin = (data) => {
                         detail: json['detail']
                     })
                 else {
-                    console.log(json)
+                    // console.log(json)
                     dispatch({
                         type: LOGIN_SUCCESS,
                         data: json

@@ -5,8 +5,7 @@ export const TASK_SUBMIT_SUCCESS = 'TASK_SUBMIT_SUCCESS'
 export const BASE_URL = 'http://localhost:8000'
 
 export const submitTask = data => {
-    console.log("Action: submitTask")
-
+    // console.log("Action: submitTask")
 
     return (dispatch, getState) => {
         const token = getState().login.token

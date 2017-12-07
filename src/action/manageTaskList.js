@@ -3,7 +3,7 @@ export const DELETE_TASK = 'DELETE_TASK'
 export const BASE_URL = 'http://localhost:8000'
 
 export const fetchTaskList = () => {
-    console.log("Action: fetchTaskList")
+    // console.log("Action: fetchTaskList")
     return (dispatch, getState) => {
         const token = getState().login.token
 
@@ -32,7 +32,7 @@ export const fetchTaskList = () => {
 }
 
 export const deleteTask = id => {
-    console.log("Action: deleteTask")
+    // console.log("Action: deleteTask")
     return (dispatch, getState) => {
         const token = getState().login.token
         let url = `${BASE_URL}/list/` + id + '/'

@@ -3,13 +3,13 @@ import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import {authCheck} from "../action/authCheck";
 import {fetchStudentProcessList} from "../action/manageStudentProcess";
-import {StuProcessList} from "../components/StuProcessList";
+import StuProcessList from "../components/StuProcessList";
 
 class Student extends Component {
     constructor(props) {
         super(props)
-        console.log("Student constructor")
-        console.log("process props", this.props)
+        // console.log("Student constructor")
+        // console.log("process props", this.props)
         this.props.authCheck()
     }
 
@@ -18,7 +18,7 @@ class Student extends Component {
     }
 
     render() {
-        console.log("Student Render")
+        // console.log("Student Render")
         const {list, group} = this.props
 
         return (
@@ -40,12 +40,6 @@ const mapStateToProps = (state, ownProps) => {
             list: state.student.data,
             id: state.login.user_info.id,
             group: state.login.user_info.group
-        })
-    else if (Object.keys(ownProps.login).length > 0)
-        return ({
-            list: ownProps.student.data,
-            id: ownProps.login.user_info.id,
-            group: ownProps.login.user_info.group
         })
     else
         return ({})

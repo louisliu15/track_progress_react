@@ -10,8 +10,8 @@ import ProcessList from '../components/ProcessList'
 class Process extends Component {
     constructor(props) {
         super(props)
-        console.log("Process constructor")
-        console.log("process props", this.props)
+        // console.log("Process constructor")
+        // console.log("process props", this.props)
         this.props.authCheck()
     }
 
@@ -22,7 +22,7 @@ class Process extends Component {
     }
 
     render() {
-        console.log("Process Render")
+        // console.log("Process Render")
         const {task, list, updateProcess} = this.props
 
         return (

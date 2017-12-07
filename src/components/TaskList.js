@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 class TaskList extends Component {
     constructor(props) {
         super(props)
-        console.log("TaskList constructor")
+        // console.log("TaskList constructor")
         // console.log(this.props)
         this.state = {
             filterList: undefined,
@@ -24,7 +24,7 @@ class TaskList extends Component {
     // }
 
     componentDidUpdate() {
-        console.log("TaskList componentDidUpdate")
+        // console.log("TaskList componentDidUpdate")
         // console.log("task_list in taskList: ", this.props.list.data)
         // console.log("taskList NOT equal to filterList: ", this.state.filterList !== this.props.list.data)
         if ((this.props.list.data instanceof Array && !this.state.filterList) ||

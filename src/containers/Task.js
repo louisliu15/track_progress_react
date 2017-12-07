@@ -7,7 +7,7 @@ import {submitTask} from "../action/submitTask";
 
 class Task extends Component{
     render (){
-        console.log("task props", this.props)
+        // console.log("task props", this.props)
         const {authCheck, submitTask, initialValues} = this.props
         // console.log("initialValues: ", initialValues)
         authCheck()

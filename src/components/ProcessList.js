@@ -11,7 +11,7 @@ class ProcessList extends Component {
     }
 
     componentDidUpdate() {
-        console.log("PorcessList componentDidUpdate")
+        // console.log("PorcessList componentDidUpdate")
         // console.log("task_list in taskList: ", this.props.list.data)
         // console.log("taskList NOT equal to filterList: ", this.state.filterList !== this.props.list.data)
         if (this.props.processList.data instanceof Array && !this.state.filterList) {
